@@ -7,7 +7,9 @@
 * [An outlook](getting-started/an-outlook.md)
 * [A crashcourse](getting-started/a-crashcourse.md)
 * [Programming Fundamentals](getting-started/programming-fundamentals.md)
-* [Exercises](getting-started/exercises.md)
+* [Best practices](getting-started/best-practices.md)
+* [Self-Assessment](getting-started/self-assessment.md)
+* [Applied Exercises](getting-started/exercises.md)
 
 ## Control Flow
 
