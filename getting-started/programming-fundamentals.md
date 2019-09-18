@@ -1,8 +1,18 @@
+---
+description: >-
+  This section gives an abstract introduction to some of the concepts used in
+  this course.
+---
+
 # Programming Fundamentals
 
 The goal of this section is to introduce the reader to some of the abstract concepts that are used in \(scientific\) programming. Since most programming languages share the same abstract concepts, it is very beneficial to familiarise oneself with the abstract building blocks of a programming language before starting to learn a specific programming language like MATLAB.
 
 This section will introduce the reader to abstract concepts like variables, loops, conditions, functions and debugging. It will end with a non-exhaustive list of good practices that make coding a less painful experience.
+
+{% hint style="info" %}
+The code displayed on this page uses pseudo-code notation i.e. it is not valid MATLAB code. The code is merely meant to provide an example of how the concepts could be implemented in any programming language \(R, C++, Python, MATLAB, ...\) and is therefore general.
+{% endhint %}
 
 ## Essential ingredients of a programme
 

@@ -1,3 +1,7 @@
+---
+description: Familiarise yourself with the following best practices for coding.
+---
+
 # Best practices
 
 The more code you write, the more experienced you will become and the easier it will be for you to avoid mistakes. After a while you will notice that certain patterns emerge that help you to tackle a certain class of problems. However, there are some best practices that you should adopt right form the start to help you write clean code and avoid bugs.

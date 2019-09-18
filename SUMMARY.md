@@ -5,11 +5,11 @@
 ## Getting Started
 
 * [An outlook](getting-started/an-outlook.md)
-* [A crashcourse](getting-started/a-crashcourse.md)
+* [Crashcourse](getting-started/a-crashcourse.md)
 * [Programming Fundamentals](getting-started/programming-fundamentals.md)
 * [Best practices](getting-started/best-practices.md)
 * [Self-Assessment](getting-started/self-assessment.md)
-* [Applied Exercises](getting-started/exercises.md)
+* [Applied exercises](getting-started/ols-estimator.md)
 
 ## Control Flow
 
