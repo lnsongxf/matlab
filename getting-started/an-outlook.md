@@ -5,5 +5,5 @@ description: >-
   difficulties understanding the code yet.
 ---
 
-# An outlook
+# Getting started with MATLAB
 

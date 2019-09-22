@@ -4,8 +4,11 @@
 
 ## Getting Started
 
-* [An outlook](getting-started/an-outlook.md)
-* [Crashcourse](getting-started/a-crashcourse.md)
+* [Getting started with MATLAB](getting-started/an-outlook.md)
+* [Crashcourse](getting-started/a-crashcourse/README.md)
+  * [Graphical User Interface](getting-started/a-crashcourse/graphical-user-interface.md)
+  * [Matrix Input and Access](getting-started/a-crashcourse/matrix-input-access.md)
+  * [Matrix Algebra](getting-started/a-crashcourse/matrix-algebra.md)
 * [Programming Fundamentals](getting-started/programming-fundamentals.md)
 * [Best practices](getting-started/best-practices.md)
 * [Self-Assessment](getting-started/self-assessment.md)
@@ -26,7 +29,7 @@
 * [Working with Datasets](data-graphics-and-reporting/working-with-datasets.md)
 * [Creating Graphs](data-graphics-and-reporting/creating-graphs.md)
 * [Creating Tables](data-graphics-and-reporting/creating-tables.md)
-* [Exercises](data-graphics-and-reporting/exercises.md)
+* [Applied Exercises](data-graphics-and-reporting/exercises.md)
 
 ## RNGs & Simulations <a id="random-numbers-and-simulations"></a>
 
