@@ -22,7 +22,7 @@
 * [Loops](control-flow/loops.md)
 * [Custom Functions](control-flow/custom-functions.md)
 * [Debugging](control-flow/debugging.md)
-* [Exercises](control-flow/exercises.md)
+* [Applied Exercises](control-flow/exercises.md)
 
 ## Data, Graphics & Reporting
 
@@ -35,11 +35,11 @@
 
 * [Random Number Generation](random-numbers-and-simulations/random-number-generation.md)
 * [Monte-Carlo Simulations](random-numbers-and-simulations/monte-carlo-simulations.md)
-* [Exercises](random-numbers-and-simulations/exercises.md)
+* [Applied Exercises](random-numbers-and-simulations/exercises.md)
 
 ## Numerical Optimization
 
 * [Numerical Optimization](numerical-optimization/numerical-optimization.md)
 * [Numerical Solvers](numerical-optimization/numerical-solvers.md)
-* [Exercises](numerical-optimization/exercises.md)
+* [Applied Exercises](numerical-optimization/exercises.md)
 
