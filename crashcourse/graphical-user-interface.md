@@ -16,11 +16,11 @@ The most common way to execute commands is while working on a script/program \(c
 clear all; close all; clc;
 ```
 
-![Executing a command from the script editor](../../.gitbook/assets/executing-commands.png)
+![Executing a command from the script editor](../.gitbook/assets/executing-commands.png)
 
 Alternatively, you can execute commands by directly typing them into the command window and hitting the return key \(Enter\) on your keyboard to evaluate them. This is very useful e.g. for trying out commands, opening help/documentation on a command or performing one-time actions such as manually exporting data.
 
-![Executing a command from the Command Window](../../.gitbook/assets/command-window.png)
+![Executing a command from the Command Window](../.gitbook/assets/command-window.png)
 
 
 

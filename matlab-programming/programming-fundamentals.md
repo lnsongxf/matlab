@@ -6,7 +6,7 @@ description: >-
 
 # Programming Fundamentals
 
-The goal of this section is to introduce the reader to some of the abstract concepts that are used in \(scientific\) programming. Since most programming languages share the same abstract concepts, it is very beneficial to familiarise oneself with the abstract building blocks of a programming language before starting to learn a specific programming language like MATLAB.
+The goal of this section is to introduce the reader to some of the abstract concepts that are used in \(scientific\) programming. Since most programming languages share the same abstract concepts, it is very beneficial to familiarise oneself with the abstract building blocks of a programming language before learning programming patterns specific to MATLAB.
 
 This section will introduce the reader to abstract concepts like variables, loops, conditions, functions and debugging. It will end with a non-exhaustive list of good practices that make coding a less painful experience.
 
