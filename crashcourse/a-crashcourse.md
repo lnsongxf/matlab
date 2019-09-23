@@ -6,3 +6,13 @@ description: >-
 
 # Intro to Crashcourse
 
+{% page-ref page="graphical-user-interface.md" %}
+
+{% page-ref page="essential-commands/" %}
+
+{% page-ref page="self-assessment.md" %}
+
+{% page-ref page="best-practices.md" %}
+
+{% page-ref page="ols-estimator.md" %}
+
