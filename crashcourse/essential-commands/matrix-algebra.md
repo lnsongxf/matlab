@@ -39,11 +39,11 @@ Eventhough matrix division is not defined in linear algebra, left and right divi
 
 Consider the linear matrix equation
 
-$B = AX$
+$$B = AX$$
 
-where $A$ is an $n \times m$ matrix, $X$ is an $m \times l$ matrix and $B$ is an $n \times l$ matrix.
+where $$A$$ is an $$n \times m$$ matrix, $$X$$ is an $$m \times l$$ matrix and $$B$$ is an $$n \times l$$ matrix.
 
-To solve for $X$, we can use the matrix left division operator `\`.
+To solve for $$X$$, we can use the matrix left division operator `\`.
 
 Similarly, the matrix right division operator `/` can be used to solve for A in the equation above.
 
@@ -62,9 +62,11 @@ Note that there is also an inverse operator `inv(A)`. However this operator shou
 
 ### Matrix inverse
 
-We can use the matrix left division operator `\` to efficiently solve for the matrix inverse of an invertible matrix $A$. Note that following the example above, if we set $B=I$, the left division operator solves for the inverse $A^{-1}$.
+We can use the matrix left division operator `\` to efficiently solve for the matrix inverse of an invertible matrix $$A$$. Note that following the example above, if we set $$B=I$$, the left division operator solves for the inverse $$A^{-1}$$.
 
-$I = AX$ $X = A \backslash I$
+$$I = AX$$ 
+
+$$X = A \backslash I$$
 
 Consider the following example.
 
@@ -110,13 +112,19 @@ out1 = functionname(in1)
 
 where `in1, in2, ...` denote the arguments of the function and `out1, out2, ...` are the outputs of the functions.
 
-To see the documentation of any function, enter
+To see the brief summary of any function, enter
 
 ```text
 help functionname
 ```
 
-into the command window.
+into the command window. Alternatively, enter
+
+```text
+doc functionname
+```
+
+into the command window to see the detailed documentation and examples.
 
 ### **length**
 
@@ -174,7 +182,7 @@ sum(y)
 
 ### prod
 
-`prod(X)` returns a row vector which contains the column-wise sum of the matrix `X`. `prod(X,dim)` computes the product of the elements of dimension `dim`.
+`prod(X)` returns a row vector which contains the column-wise product of the matrix `X`. `prod(X,dim)` computes the product of the elements of dimension `dim`.
 
 ```text
 X = [1, 4; 0.5, 2]
@@ -248,7 +256,7 @@ log(X)
 
 Here are some examples of other linear algebra matrix functions which are often used.
 
-* `chol(X)` - Compute cholesky-factor of pos. def. matrix
+* `chol(X)` - Compute Cholesky-factor of pos. def. matrix
 * `det(X)` - Compute determinant of square matrix
 * `trace(X)` - Compute the trace of square matrix
 * `eig(X)` - Compute eigenvalues and -values of square matrix

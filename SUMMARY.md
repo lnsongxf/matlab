@@ -11,8 +11,8 @@
   * [Matrix Input and Access](crashcourse/essential-commands/matrix-input-access.md)
   * [Matrix Algebra](crashcourse/essential-commands/matrix-algebra.md)
   * [Logical Operations](crashcourse/essential-commands/logical-operations.md)
-* [Self-Assessment](crashcourse/self-assessment.md)
 * [Best practices](crashcourse/best-practices.md)
+* [Self-Assessment](crashcourse/self-assessment.md)
 * [Applied exercises](crashcourse/ols-estimator.md)
 
 ## MATLAB Programming
