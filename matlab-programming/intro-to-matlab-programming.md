@@ -11,7 +11,7 @@ We start this section with an abstract introduction into the Fundamentals of Pro
 
 {% page-ref page="programming-fundamentals.md" %}
 
-After this, we will dive into the basics of Control Flow in MATLAB, building on the logical operators you have already learned in the 'Getting Started' section. Flow control allows to write more complex programs by dividing the code into code blocks which are only executed when certain conditions are met or executing code block multiple times with different parameters i.e. creating loops.
+After this, we will dive into the basics of Control Flow in MATLAB, building on the logical operators you have already learned in the 'Getting Started' section. Flow control allows us to write more complex programs by dividing the code into code blocks which are only executed when certain conditions are met or executing code block multiple times with different parameters i.e. creating loops.
 
 {% page-ref page="conditions.md" %}
 

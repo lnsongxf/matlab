@@ -102,6 +102,14 @@ L = ...formula goes here...
 
 _Hint: When coding up the formula, write it as a function of a vector. Start with the inner parts of the formula i.e. first think about how_ $$x_i \beta$$ _looks like for different_ $$i$$ _and how you can write it as a vector. Then think about what applying functions like `exp()` and `ln` \(which in MATLAB is the `log` function\) does to this vector. Finally think about how to evaluate the sum. It might be easiest to split up the formula into two separate parts \(the one starting with_ $$y_i$$ _and the one starting with_ $$(1-y_i)$$ _that you save in different variables, then evaluate the `sum` operator over the sum of these variables._
 {% endtab %}
+
+{% tab title="Check" %}
+To check your log-likelihood implementation is working correctly, try out different values for $$\beta$$ and compare the resulting log-likelihood values. The data was generated with $$\beta_0=1.5$$ and so your code should give you the maximal log-likelihood value close to this point.
+
+Here is a plot of some reference values for the function.
+
+![Reference values for the log-likelihood function](../.gitbook/assets/logit-exercise-reference.png)
+{% endtab %}
 {% endtabs %}
 
 {% file src="../.gitbook/assets/datasets-getting-started.zip" caption="Datasets for this section" %}
