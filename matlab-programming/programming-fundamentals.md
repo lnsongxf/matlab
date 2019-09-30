@@ -45,7 +45,7 @@ Scientific programming languages like MATLAB often also have specific data types
 
 ## Constants and variables
 
-Constants and variables are essentially names that point to specific values which are stored in memory \(i.e. a named memory location\). **Constants** are names whose value cannot be changed during the runtime of the program while the values of **variables** can be changed while the program is running.
+Constants and variables are essentially names that point to specific values which are stored in memory \(i.e. a named memory location\). **Constants** are objects whose value cannot be changed during the runtime of the program while the values of **variables** can be changed while the program is running.
 
 Consider the following pseudo-code that declares different variables and assigns them a value which might be changed later.
 
