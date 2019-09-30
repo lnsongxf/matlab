@@ -1,17 +1,17 @@
 ---
 description: >-
   This section gives an abstract introduction to some of the concepts used in
-  this course.
+  this section.
 ---
 
 # Programming Fundamentals
 
 The goal of this section is to introduce the reader to some of the abstract concepts that are used in \(scientific\) programming. Since most programming languages share the same abstract concepts, it is very beneficial to familiarise oneself with the abstract building blocks of a programming language before learning programming patterns specific to MATLAB.
 
-This section will introduce the reader to abstract concepts like variables, loops, conditions, functions and debugging. It will end with a non-exhaustive list of good practices that make coding a less painful experience.
+This section will introduce the reader to abstract concepts like variables, loops, conditions, functions and debugging.
 
 {% hint style="info" %}
-The code displayed on this page uses pseudo-code notation i.e. it is not valid MATLAB code. The code is merely meant to provide an example of how the concepts could be implemented in any programming language \(R, C++, Python, MATLAB, ...\) and is therefore general.
+Most examples on this page use pseudo-code notation i.e. it the displayed code is not valid MATLAB code. The code is meant to provide an example of how the concepts could be implemented in different programming languages \(R, C++, Python, MATLAB, ...\) and is therefore general. The next sections of the course will cover the specific implementations in MATLAB.
 {% endhint %}
 
 ## Essential ingredients of a programme
@@ -37,8 +37,8 @@ In an abstract sense, a value is data of some specific form that is stored in th
 | **int** | Integer \(whole number\) | 7 or 3 or -5 |  |
 | **float** | A real floating point number \(has a fractional part\) | 1.2 or 3.14159 | 32 bit, takes up less memory, but less precise |
 | **double** | A double-precision floating point number | 3.14159265359 | 64 bit, takes up more memory, but more precise |
-| **char** | A single character | 'a' or 'Q' |  |
-| **string** | An array of chars \(text\) | 'hello' or 'This is a sentence' |  |
+| **char** | A single character | "a" or "Q" |  |
+| **string** | An array of chars \(text\) | "hello" or "This is a sentence" |  |
 | **boolean** | A logical value, either 'True' \(=1\) or 'False' \(=0\) | True, False, 1, 0 |  |
 
 Scientific programming languages like MATLAB often also have specific data types to store arrays of numbers \(e.g. `matrix` or `array` in MATLAB\) or arrays of mixed numbers and text \(`cellarray` in MATLAB\).
@@ -49,14 +49,51 @@ Constants and variables are essentially names that point to specific values whic
 
 Consider the following pseudo-code that declares different variables and assigns them a value which might be changed later.
 
+{% tabs %}
+{% tab title="Pseudocode" %}
 ```text
 x = 3
-c = 'Z'
-name = 'this is a string'
+c = "Z"
+name = "this is a string"
 Pi = 3.14159265359
 x = 5
 completed = False
 ```
+{% endtab %}
+
+{% tab title="MATLAB" %}
+```text
+x = 3;
+c = "Z";
+name = "this is a string";
+Pi = 3.14159265359;
+x = 5;
+completed = false;
+```
+{% endtab %}
+
+{% tab title="Python" %}
+```python
+x = 3
+c = "Z"
+name = "this is a string"
+Pi = 3.14159265359
+x = 5
+completed = False
+```
+{% endtab %}
+
+{% tab title="R" %}
+```r
+x <- 3
+c <- "Z"
+name <- "this is a string"
+Pi <- 3.14159265359
+x <- 5
+completed = FALSE
+```
+{% endtab %}
+{% endtabs %}
 
 Later when we would like to use the value in our program, we can refer to the value by its name, e.g. `x`.
 
@@ -74,12 +111,43 @@ Most scientific programming languages come with built-in functions for standard 
 
 Functions usually have a syntax similar to the following one.
 
+{% tabs %}
+{% tab title="Pseudocode" %}
 ```text
 function functionname (input_arguments) {
   code_block_that_uses_inputs_to_calculate_output
   return(output)
 }
 ```
+{% endtab %}
+
+{% tab title="MATLAB" %}
+```text
+function [outputArg1,outputArg2] = functionName(inputArg1,inputArg2)
+  ...
+  outputArg1 = ...;
+  outputArg2 = ...;
+end
+```
+{% endtab %}
+
+{% tab title="Python" %}
+```python
+def functionname(inputArg1, inputArg2):
+  ...
+  return outputs
+```
+{% endtab %}
+
+{% tab title="R" %}
+```r
+functionname <- function (inputArg1, inputArg2) {
+  ...
+  return(outputs)
+}
+```
+{% endtab %}
+{% endtabs %}
 
 **Example**
 
@@ -106,7 +174,7 @@ ynext = predict_y(y_prev, x)
 
 A condition defines a decision about which block of code to execute depending on a simple criterion. Conditions are phrased in terms of boolean i.e. true-false decisions. The following condition clauses are used in many programming languages
 
-**if-else statements**
+### **if-else statements**
 
 **if statements** wrap around a code block and execute it only when a certain condition is met \(i.e. checking the condition returns a `True` boolean value\).
 
@@ -114,17 +182,61 @@ A condition defines a decision about which block of code to execute depending on
 
 These statements usually follow the following syntax \(in pseudocode\).
 
+{% tabs %}
+{% tab title="Pseudocode" %}
 ```text
-  if (condition) {
-    code_block
-  }
+if (condition) {
+  code_block
+}
 
-  if (condition) {
-    code_block
-  } else {
-    alternative_code_block
-  }
+if (condition) {
+  code_block
+} else {
+  alternative_code_block
+}
 ```
+{% endtab %}
+
+{% tab title="MATLAB" %}
+```text
+if condition
+  ...
+end
+
+if condition
+  ...
+else
+  ...
+end
+```
+{% endtab %}
+
+{% tab title="Python" %}
+```python
+if (condition):
+  ...
+  
+if (condition):
+  ...
+else:
+  ...
+```
+{% endtab %}
+
+{% tab title="R" %}
+```r
+if (condition) {
+  ...
+}
+
+if (condition) {
+  ...
+} else {
+  ...
+}
+```
+{% endtab %}
+{% endtabs %}
 
 **Example**
 
@@ -140,27 +252,68 @@ if (number > 5) {
 
 Of course multiple if or if-else statements can be nested to describe more complex decisions.
 
-**switch-case-otherwise statements**
+### **switch-case-otherwise statements**
 
 **switch-case-otherwise statements** work similarly to if-else statements, but are especially useful if the condition involves checking multiple cases. They take the following form \(in pseudocode\).
 
+{% tabs %}
+{% tab title="Pseudocode" %}
 ```text
 switch (condition) {
-
-  case value_1
+  case value_1:
     code_block_1
 
-  case value_2
+  case value_2:
     code_block_2
 
-  case value_3
+  case value_3:
     code_block_3
 
-  otherwise
+  otherwise:
     alternative_code_block
-
 }
 ```
+{% endtab %}
+
+{% tab title="MATLAB" %}
+```text
+switch variable
+    case value1
+        ...
+    case value2
+        ...
+    case value3
+        ...
+    ...
+    otherwise
+        ...
+end
+```
+{% endtab %}
+
+{% tab title="Python" %}
+{% hint style="info" %}
+Python has no implementation of switch-case.
+{% endhint %}
+{% endtab %}
+
+{% tab title="R" %}
+```r
+# R's switch works on string variables only
+switch(variable, 
+foo={
+  ...
+},
+bar={
+  ...   
+},
+{
+  ...
+}
+)
+```
+{% endtab %}
+{% endtabs %}
 
 **Example**
 
@@ -189,15 +342,42 @@ Say we are writing a program that allows the user to replicate some results obta
 
 Loops are used to repeat sets of commands \(with some slight variations\) without having to rewrite them multiple times.
 
-**for-loop**
+### **for-loop**
 
 A **for-loop statement** loops over a command a specific number of times, keeping an index of the current iteration which increments each time the loop is completed.
 
+{% tabs %}
+{% tab title="Pseudocode" %}
 ```text
-  for counter = start_value to end_value {
+for counter = start_value to end_value {
     code_block_dependend_on_counter
-  }
+}
 ```
+{% endtab %}
+
+{% tab title="MATLAB" %}
+```text
+for counter=startValue:endValue
+  ...
+end
+```
+{% endtab %}
+
+{% tab title="Python" %}
+```python
+for counter in range(1,n+1):
+  ...
+```
+{% endtab %}
+
+{% tab title="R" %}
+```r
+for (counter in seq(1,n)) {
+  ...
+}
+```
+{% endtab %}
+{% endtabs %}
 
 **Example**
 
@@ -214,17 +394,44 @@ Consider the following example where we would like to run a simulation which run
   }
 ```
 
-**while-loop**
+### **while-loop**
 
 A **while\_loop statement** iterates as long as the supplied condition is `True`.
 
 It has the following form
 
+{% tabs %}
+{% tab title="Pseudocode" %}
 ```text
 while boolean_condition {
   code_block
 }
 ```
+{% endtab %}
+
+{% tab title="MATLAB" %}
+```text
+while condition
+  ...
+end
+```
+{% endtab %}
+
+{% tab title="Python" %}
+```python
+while condition:
+  ...
+```
+{% endtab %}
+
+{% tab title="R" %}
+```r
+while (condition) {
+  ...
+}
+```
+{% endtab %}
+{% endtabs %}
 
 Often it is useful to manually introduce a counter of the number of iterations.
 
@@ -260,28 +467,4 @@ while (!converged) {
 ```
 
 This loop will iterate on the step of the algorithm until the convergence criterion \(which e.g. could be the difference between the value at `iter` and value at `iter-1` is smaller than `tolerance`, here 0.00001\).
-
-## Debugging
-
-A bug is an error in your code that causes your program to malfunction. A large part of the programming experience is spotting and solving these errors. Every program eventually will have some minor or major errors, therefore it is important how to deal with them.
-
-Errors in a program can be divided into the following classes.
-
-**Syntax errors**
-
-These are errors which arise from not respecting the syntax of the language e.g. misspelling command names, forgetting to define some variable which is later used, forgetting a symbol like a parentheses somewhere. If you have syntax errors in your code and try to run it, it will not run, but throw an error instead. Most code editors \(like e.g. the MATLAB code editor\) will tell you exactly where it can´t understand your code and give you immediate feedback while you write your code. Therefore, syntax errors are easy to spot.
-
-**Runtime errors**
-
-Runtime errors occur while the program is running, eventhough the syntax of your code is fine. Often they arise because the program depends on some inputs which are only defined during the runtime of the program and some code that depends on these inputs doesn´t know how to process the input.
-
-Imagine e.g. you have a very simple program where the user can input two numbers `x` and `y` and it will return `x/y`. The program will run fine if the user enters e.g. 5 and 1, but if he/she enters 0 for y, the program will throw an error because division by 0 is not defined.
-
-Because they only occur at runtime, runtime errors can only be spotted when regularly testing your code.
-
-**Semantic errors**
-
-Semantic errors occur when the syntax is correct and your program doesn´t throw an error on runtime, but it is not behaving in the way you intended it to behave e.g. it returns the wrong results. Semantic errors are thus logical mistakes that you made when breaking the problem your are trying to solve into the essential ingredients.
-
-Because they do not throw an error, semantic errors are the hardest to spot. The best way to spot them is to run extensive tests with your program where you use different inputs to your program and think before about how the program should behave and what the result should be. Then you run the program and compare your expectations with the results.
 
