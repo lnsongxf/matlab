@@ -29,7 +29,7 @@ Check your function works appropriately by comparing to MATLAB's `regress`functi
 
 ```text
   clear all; close all; clc;
-  load olsdata.m
+  load olsdata.mat
 ```
 
 This will clear everything and load the data into your workspace.

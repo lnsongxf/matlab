@@ -25,7 +25,7 @@ Next, read up on MATLABs `regress` function on the [MATLAB documentation page on
 
 ```text
   clear all; close all; clc;
-  load olsdata.m
+  load olsdata.mat
 ```
 
 * Check the data has been loaded into your workspace. You should see a matrix `X`, a vector `y` as well as a vector `beta_true` which contains the true values of $$\beta$$ that were used to generate the data
