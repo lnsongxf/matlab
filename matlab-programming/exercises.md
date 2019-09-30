@@ -80,7 +80,7 @@ ols_result
 {% endtab %}
 {% endtabs %}
 
-{% file src="../.gitbook/assets/datasets-getting-started.zip" caption="Datasets from \'Getting Started\' section" %}
+{% file src="../.gitbook/assets/datasets-getting-started.zip" caption="Datasets from \'Crashcourse\' section" %}
 
 ### Theory
 
@@ -183,9 +183,7 @@ To find the minimum of $$f(x)$$ on the interval, use the following algorithm:
 2. In each half, pick as a candidate for a maximum $$x_L$$ and $$x_R$$ as the middle point of the respective interval
 3. Evaluate $$f(x_L)$$ and $$f(x_R)$$
 4. Now two cases are possible
-
-* \(a\) If $$f(x_L)>f(x_R)$$ i.e. the minimizer is in the right interval. If this is true, set the new interval equal to the right interval.
-* \(b\) If $$f(x_L)<=f(x_R)$$, the minimizer is in the left interval. If this is true, set the new interval equal to the left interval.
-
-1. Using the new interval $$[a^*, b^*]$$, repeat steps 1-4 until the absolute difference between the new and cold candidate is smaller than `1e-5`.
+   * \(a\) If $$f(x_L)>f(x_R)$$ i.e. the minimizer is in the right interval. If this is true, set the new interval equal to the right interval.
+   * \(b\) If $$f(x_L)<=f(x_R)$$, the minimizer is in the left interval. If this is true, set the new interval equal to the left interval.
+5. Using the new interval $$[a^*, b^*]$$, repeat steps 1-4 until the absolute difference between the new and cold candidate is smaller than `1e-5`.
 
