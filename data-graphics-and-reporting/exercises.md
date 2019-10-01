@@ -37,7 +37,7 @@ In this exercise you will extend the exercise from the previous section to calcu
 
 {% tabs %}
 {% tab title="Exercise" %}
-Simulate the evolution of the economy for each variable, saving it in a different vector when the initial capital stock per worker is $$k_0=0.1$$ and initial population size is $$L_1=1$$. Create a 4 by 4 plot that shows the evolution of capital per worker, output, wages and return to capital side by side. For each plot, label the variable and axis appropriately.
+Simulate the evolution of the economy for each variable, saving it in a different vector when the initial capital stock per worker is $$k_0=0.1$$ and initial population size is $$L_1=1$$. Create a 2 by 2 plot that shows the evolution of capital per worker, output, wages and return to capital side by side. For each plot, label the variable and axis appropriately.
 
 Use the following parameter values.
 
@@ -49,7 +49,7 @@ Use the following parameter values.
 | $$n$$ | 0.02 |
 | $$\delta$$ | 0.5 |
 
-**Tip:** Use the `subplot` command to create the 4x4 plot matrix.
+**Tip:** Use the `subplot` command to create the 2x2 plot matrix.
 {% endtab %}
 {% endtabs %}
 
