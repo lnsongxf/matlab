@@ -33,6 +33,8 @@ In this exercise you will download some data of your choice from popular statist
 
 ## 2. Plotting the evolution of the economy in the canonical OLG model
 
+In this exercise you will extend the exercise from the previous section to calculating the evolution of  multiple variables characterizing the OLG economy and plotting the generated series.
+
 {% tabs %}
 {% tab title="Exercise" %}
 Simulate the evolution of the economy for each variable, saving it in a different vector when the initial capital stock per worker is $$k_0=0.1$$ and initial population size is $$L_1=1$$. Create a 4 by 4 plot that shows the evolution of capital per worker, output, wages and return to capital side by side. For each plot, label the variable and axis appropriately.
