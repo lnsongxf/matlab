@@ -4,7 +4,9 @@
 
 In this section we will learn how to use MATLABs powerful graphics engine to create graphs that are ready for publication.
 
-> **Note:** To run the plot commands in this sections, download the following dataset which contains a few series from the FRED database.
+{% hint style="info" %}
+To run the plot commands in this sections, download the following dataset package which contains a few series from the FRED database \(publicly available at [http://fred.stlouisfed.org](http://fred.stlouisfed.org)\).
+{% endhint %}
 
 {% file src="../.gitbook/assets/data\_graphing.zip" caption="Datasets for this section" %}
 
@@ -180,7 +182,9 @@ By default the `print` command will add a lot of whitespace to your plot to fill
 
 We can avoid this behaviour by reading the dimensions of the figure using the figure handle and then setting the paper size appropriately.
 
-You can find a function that achieves this in this [GitHub repository with useful MATLAB helper functions](https://github.com/lukashoesch/matlab-helper-functions/). To download the folder with MATLAB helper functions, click on "Clone or download" and choose "Download .zip". Then unzip the folder and copy the **save\_as\_pdf.m** file into your main working directory.
+You can download a function here that helps you to achieve this. Unzip the folder and copy the file `save_as_pdf.m` into your current working directory.
+
+{% file src="../.gitbook/assets/save\_as\_pdf.zip" caption="save\_as\_pdf\(\) helper function" %}
 
 Here is an example of how to use the `save_as_pdf` function.
 
