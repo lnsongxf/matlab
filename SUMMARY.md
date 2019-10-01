@@ -30,7 +30,6 @@
 * [Intro to Data, Graphics & Reporting](data-graphics-and-reporting/about-this-section.md)
 * [Working with Datasets](data-graphics-and-reporting/working-with-datasets.md)
 * [Creating Graphs](data-graphics-and-reporting/creating-graphs.md)
-* [Creating Tables](data-graphics-and-reporting/creating-tables.md)
 * [Applied Exercises](data-graphics-and-reporting/exercises.md)
 
 ## RNGs & Simulations <a id="random-numbers-and-simulations"></a>
