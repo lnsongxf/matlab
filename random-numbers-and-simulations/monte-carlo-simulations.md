@@ -26,7 +26,7 @@ end
 histogram(nmbr)
 ```
 
-We can also use Monte Carlo simulation to approximate $$\pi$$. Recall that the area of a circle with radius $$r$$, is $$A_c = \pi r^2$$. We can put this circle inside of a square whos sides have length $$2r$$ and thus an area of $$A_s = 4r^2$$. Now imagine that we draw a random point inside this square. The probability of this point being within the circle is $$Pr($$Point inside circle$$) = \pi r^2 / 4 r^2$$ and thus we can express $$\pi$$ as $$\pi = 4 Pr($$Point inside circle$$)$$. We can use Monte Carlo simulation to approximate the probability and thus to get an approximation of $$\pi$$. We proceed as follows:
+We can also use Monte Carlo simulation to approximate $$\pi$$. Recall that the area of a circle with radius $$r$$, is $$A_c = \pi r^2$$. We can put this circle inside of a square whose sides have length $$2r$$ and thus an area of $$A_s = 4r^2$$. Now imagine that we draw a random point inside this square. The probability of this point being within the circle is $$Pr($$Point inside circle$$) = \pi r^2 / 4 r^2$$ and thus we can express $$\pi$$ as $$\pi = 4 Pr($$Point inside circle$$)$$. We can use Monte Carlo simulation to approximate the probability and thus to get an approximation of $$\pi$$. We proceed as follows:
 
 {% code-tabs %}
 {% code-tabs-item title="sim\_approx\_pi.m" %}
