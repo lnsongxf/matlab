@@ -49,7 +49,7 @@ plot(x(ii),y(ii),'.b');
 plot(x(~ii),y(~ii),'.r');
 rectangle('Position',[0 0 2 2],'Curvature',[1,1]);
 piapprox = 4*(m/n_sim);
-titlelstr = sprintf('Pi is approx. %g', piapprox);
+titlestr = sprintf('Pi is approx. %g', piapprox);
 title(titlestr)
 
 fprintf('Pi is approx. %g based on %g draws.\n', piapprox, n_sim)

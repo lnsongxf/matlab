@@ -1,3 +1,9 @@
+---
+description: >-
+  In this chapter we will discuss how to create pseudo-random numbers in MATLAB
+  and how to run simulations.
+---
+
 # Intro to RNGs & Simulations
 
 We start by discussing the core statistical distributions available in MATLAB and how to generate pseudo-random numbers for simulations.
