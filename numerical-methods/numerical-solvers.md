@@ -16,7 +16,7 @@ The syntax for using `fzero` is
 [x,fval,exitflag] = fzero(@function,x0,options)
 ```
 
-where $x$ is the solution, `fval` the value of the function at the solution, `exitflag` gives the exit condition, `function` is our function of interest, $$x0$$ is the starting value \(can be a single point or an interval\), and options specifies the options of fzero to be used.
+where $$x$$ is the solution, `fval` the value of the function at the solution, `exitflag` gives the exit condition, `function` is our function of interest, $$x0$$ is the starting value \(can be a single point or an interval\), and options specifies the options of `fzero` to be used.
 
 Say, for example, if we want to find the root of the sine function close to 3 we write
 
@@ -56,13 +56,13 @@ c = 1.5;
 
 ## Solving systems of nonlinear equations
 
-Often the problems we face are not simply a function of a single variable but are rather systems of nonlinear equations. To solve these problems we can use the `fsolve` function wich solves $$F(x)=0$$ for $$x$$ \(which is a vector or matrix\), where $$F(x)$$ is a function returning a vector value. The syntax is comparable to that of `fzero`, that is
+Often the problems we face are not simply a function of a single variable but are rather systems of nonlinear equations. To solve these problems we can use the `fsolve` function which solves $$F(x)=0$$ for $$x$$ \(which is a vector or matrix\), where $$F(x)$$ is a function returning a vector value. The syntax is comparable to that of `fzero`, that is
 
 ```text
 [x,fval,exitflag] = fsolve(@function,x0,options)
 ```
 
-where $$x$$ is the solution, `fval` the value of the function at the solution, `exitflag` gives the exit condition, `function` is our function of interest, `x0` is the starting value, and options specifies the options of fsolve to be used.
+where $$x$$ is the solution, `fval` the value of the function at the solution, `exitflag` gives the exit condition, `function` is our function of interest, `x0` is the starting value, and options specifies the options of `fsolve` to be used.
 
 Say that we have a system of two equations in two variables:
 
@@ -73,9 +73,9 @@ $$y cos(x) = 1$$
 To solve this system we first need to convert the system to the form $$F(X)=0$$ and write a function that calculates the left-hand side of the the equation:
 
 ```text
-function F = d2roots(x)
-F(1) = exp(-x(1)) - x(2)^2;
-F(2) = x(2)*cos(x(1)) - 1;
+function F = d2roots(z)
+F(1) = exp(-z(1)) - z(2)^2;
+F(2) = z(2)*cos(z(1)) - 1;
 end
 ```
 
@@ -84,8 +84,8 @@ Then we can pass the function to `fsolve` to obtain the solution:
 ```text
 options = optimset('fsolve');
 options = optimset(options,'Display','iter');
-x0 = [0,0];
-[x,fval,exitval] = fsolve(@d2roots,x0,options)
+z0 = [0,0];
+[z,fval,exitval] = fsolve(@d2roots,z0,options)
 ```
 
 ### Solving a New Keynesian model using `fsolve`
@@ -94,13 +94,13 @@ The basic New Keynesian model consists of three core equations:
 
 $$ \pi_t = \beta E_t \pi_{t+1}+\kappa y_t$$ \(The NK Phillips curve\)
 
-$$ y_t = E_t y_{t+1} - \sigma^{-1}(it - E_t \pi_{t+1}-\rho+z_t)$$ \(The Dynamic IS equation\)
+$$ y_t = E_t y_{t+1} - \sigma^{-1}(i_t - E_t \pi_{t+1}-\rho+z_t)$$ \(The Dynamic IS equation\)
 
-$$ it = \rho + \phi_{\pi}\pi_t + \phi_y y_t$$ \(Monetary policy\)
+$$ i_t = \rho + \phi_{\pi}\pi_t + \phi_y y_t$$ \(Monetary policy\)
 
 where $$\pi_t$$ _denotes the inflation rate,_ $$y_t$$ _the output gap,_ $$i_t$$ _the nominal interest rate and_ $$z_t$$ _is a "financial shock" which evolves according to the process_ $$z_t = \rho_z z_{t-1} + \epsilon_t$$ _where_ $$\epsilon_t$$ _is an iid random variable with zero mean and standard deviation_ $$\sigma_{\epsilon}$$.
 
-We consider a finite horizon version of the model and use `fsolve` to solve the system and give us the impulse response of a one standard deviation decrease in $$\epsilon_t$$ _\(i.e.,_ $$\epsilon_0 = -\sigma_{\epsilon}$$, $$\epsilon_t = 0 \forall t>0$$\) for the parameter values
+We consider a finite horizon version of the model and use `fsolve` to solve the system and give us the impulse response of a one standard deviation decrease in $$\epsilon_t$$ _\(i.e.,_ $$\epsilon_0 = -\sigma_{\epsilon}$$, $$\epsilon_t = 0  \ \  \forall t>0$$\) for the parameter values
 
 | $$\beta$$ | $$\kappa$$ | $$\sigma$$ | $$\phi_{\pi}$$ | $$\phi_y$$ | $$\rho_z$$ | $$\sigma_{\epsilon}$$ | $$\rho$$ |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |

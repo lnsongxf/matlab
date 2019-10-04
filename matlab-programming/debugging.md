@@ -16,7 +16,7 @@ These are errors which arise from not respecting the syntax of the language e.g.
 
 Runtime errors occur while the program is running, eventhough the syntax of your code is fine. Often they arise because the program depends on some inputs which are only defined during the runtime of the program and some code that depends on these inputs doesn´t know how to process the input.
 
-Imagine e.g. you have a very simple program where the user can input two numbers `x` and `y` and it will return `x/y`. The program will run fine if the user enters e.g. 5 and 1, but if he/she enters 0 for y, the program will throw an error because division by 0 is not defined.
+Imagine e.g. you have a very simple program where the user can input two numbers `x` and `y` and it will return `x/y`. The program will run fine if the user enters e.g. 5 and 1, but if he/she enters 0 for `y`, the program will throw an error because division by 0 is not defined.
 
 Because they only occur at runtime, runtime errors can only be spotted when regularly testing your code.
 
